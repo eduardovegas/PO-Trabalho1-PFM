@@ -1,1 +1,1 @@
-# Pesquisa Operacional - Problema do Fluxo Máximo (Trabalho 1)
+# PO - Problema do Fluxo Máximo (Trabalho 1)
