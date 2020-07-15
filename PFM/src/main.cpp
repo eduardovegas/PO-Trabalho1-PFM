@@ -118,11 +118,11 @@ void solve(Data& data)
     std::cout << "fluxo maximo obtido:" << pfm.getObjValue() << std::endl;
     for(int j = 0; j < data.getNArcos(); j++) 
     {
-
-        printf("Fluxo do no #%d para o no #%d: ", data.getNoArco(j,0), data.getNoArco(j,1));
-
-        std::cout << pfm.getValue(x[j]) << std::endl;
-        
+        if(pfm.getValue(x[j]) > 0)
+        {
+            printf("Fluxo do no #%d para o no #%d: ", data.getNoArco(j,0), data.getNoArco(j,1));
+            std::cout << pfm.getValue(x[j]) << std::endl;
+        }
     }
 
 }
